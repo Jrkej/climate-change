@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+@font-face {
+    font-family: SnowSeason;
+    src: url(../fonts/SnowySeason.ttf);
+}
+@font-face {
+    font-family: tech;
+    src: url(../fonts/OriginTech.ttf);
+}
+@font-face {
+    font-family: Summer;
+    src: url(../fonts/Blazed.ttf);
+}
+@font-face {
+    font-family: louis;
+    src: url(../fonts/louis.ttf);
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff7675;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  overflow: hidden;
+  font-family: "Luckiest Guy", cursive;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: transparent;
+}
+/* CLOUDS */
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  background: transparent;
+  display: block;
+  box-shadow: 0 0 8vw 5vh rgba(255, 255, 255, 0.6),
+    12vw 0 12vw 8vw rgba(255, 255, 255, 0.6),
+    -14vw 0 16vw 8vw rgba(255, 255, 255, 0.6),
+    22vw 0 16vw 12vw rgba(255, 255, 255, 0.6),
+    -22vw 0 16vw 12vw rgba(255, 255, 255, 0.6);
+}
+/* JUMP */
+h1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8vw;
+  display: block;
+  text-align: center;
+  padding-top: 2vw;
+}
+h2 {
+    font-size: 8vw;
+    position: relative;
+    font-family: tech;
+    color:rgb(0, 255, 157);
+    padding-top: 8vw;
+}
+
+h2:before {
+    padding-top: 8vw;
+    content: "Climate Change";
+    position: absolute;
+    font-family: tech;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:#ff7675;
+    overflow: hidden;
+    animation: animate 6s infinite;
+}
+h1 span {
+  position: relative;
+  top: 2vh;
+  display: inline-block;
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+  font-size: 8vw;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.box {
+    text-align: center;
+    padding-top: 8vw;
+}
+h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: louis;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+  
+.bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+  
+.bn632-hover:focus {
+    outline: none;
+}
+  
+.bn632-hover.bn24 {
+      background-image: linear-gradient(
+        to right,
+        #6253e1,
+        #852d91,
+        #a3a1ff,
+        #f24645
+      );
+      box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(11) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(13) {
+  -webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(14) {
+  -webkit-animation-delay: 0.8s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+@keyframes animate {
+    0% {
+    height: 25%;
+    }
+    25% {
+    height: 50%;
+    color: rgb(0, 255, 221);
+    }
+    50% {
+    height: 65%;
+    color: rgb(126, 255, 6);
+    }
+    75% {
+    height: 40%;
+    color: yellow;
+    }
+    100% {
+    height: 25%;
+    color: rgb(255, 196, 0);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        height: 10vw;
+    }
+    h1 span{
+        font-size: 10vw;
+    }
+    h2 {
+        padding-top: 12vw;
+        font-size: 9vh;
+    }
+    h2:before {
+        padding-top: 12vw;
+        font-size: 9vh;
+    }
+    .box {
+        padding-top: 8vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        height: 12vh;
+        padding-top: 3vh;
+    }
+    h1 span{
+        font-size: 10vh;
+    }
+    h2 {
+        font-size: 6vh;
+        padding-top: 8vh;
+    }
+    h2:before {
+      padding-top: 8vh;
+        font-size: 6vh;
+    }
+    .box {
+      padding-top: 10vh;
+    }
+
+}

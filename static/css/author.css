@@ -1,0 +1,85 @@
+@font-face {
+    font-family: urban;
+    src: url(../fonts/UrbanJungleDEMO.otf);
+}
+@font-face {
+    font-family: coco;
+    src: url(../fonts/cocogoose.ttf);
+}
+body {
+    overflow: hidden;
+    background-color: rgb(190, 188, 188);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    align-self: center;
+    font-family: urban;
+    color: lightcoral;
+}
+h2 {
+    text-transform: uppercase;
+}
+.info {
+    text-align: left;
+    padding-top: 4vh;
+    padding-left: 8vw;
+    font-size: 1.5vh;
+}
+.sidebar img {
+    padding-top: 4vh;
+    width: 20vw;
+    height: 50vh;
+}
+.sidebar {
+    padding-top: 10vh;
+    background-color: honeydew;
+    width: 30vw;
+    height: 90vh;
+}
+.content {
+    width: 70vw;
+    top: 0%;
+    position: absolute;
+    margin-left: 30vw;
+    margin-top: 18vh;
+    text-align: left;
+}
+.aboutme {
+    padding-top: 5vh;
+    padding-left: 3vw;
+    font-family: coco;
+}
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width:45%;
+    }
+    .sidebar img {
+        padding-top: 4vh;
+        width: 30vw;
+        height: 55vh;
+    }
+    .info {
+        padding-top: 2vh;
+        padding-left: 12vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width:100%;
+    }
+    .sidebar img {
+        padding-top: 4vh;
+        width: 80vw;
+        height: 55vh;
+    }
+    .info {
+        padding-left: 19vh;
+        padding-top: 2vh;
+        font-size: 1.6vh;
+    }
+    .content {
+        margin-top: 10vh;
+        margin-left: 30vw;
+    }
+}
