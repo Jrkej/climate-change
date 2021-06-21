@@ -3,8 +3,10 @@
 <head>
     <link rel="icon" href="static/images/logo.png">
     <link rel="stylesheet" href="static/css/climate.css">
-    <link rel="stylesheet" href="static/css/snowflake.css">
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/snowflakeNoextra.css">
     <link rel="stylesheet" href="static/css/3Dview.css">
+    <script type="text/javascript" src="static/js/animator.js"></script>
     <meta charset="UTF-8">
 
     <!--Meta Information about the page-->
@@ -19,6 +21,53 @@
     <title>Times NIE Project</title>
 </head>
 <body>
+    <!-- Navbar -->
+    <div class="pin">
+      <div class="navbar" id="nav">
+          <div class="dropdown">
+              <img src="static/images/home.png">
+              <div class="dropdown-content">
+                <a href="/home">Home</a>
+                <a href="/author">Author</a>
+                <a href="/climate">Climate</a>
+                <a href="/changes">Changes</a>
+              </div>
+            </div>
+          <div class="dropdown-right">
+              <button class="dropbtn">About me
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          <div class="dropdown-right">
+              <button class="dropbtn">Climate
+              </button>
+              <div class="dropdown-content">
+                <a href="/climate">Top.</a>
+                <a href="/climate#what-is-climate">What is Climate?</a>
+                <a href="/climate#factors-affecting-climate">Factors affecting Climate.</a>
+                <a href="/climate#types-of-climate">Types of Climate.</a>
+                <a href="/climate#weather-vs-climate">Weather vs Climate.</a>
+                <a href="/climate#affect-of-easterly-winds">Affect of easterly winds.</a>
+                <a href="/climate#what-is-coriolis-force">What is Coriolis Force?</a>
+                <a href="/climate#the-indian-monsoon">The Indian Monsoon.</a>
+                <a href="/climate#distribution-of-rainfall">Distribution of Rainfall.</a>
+              </div>
+            </div>
+          <div class="dropdown-right">
+            <button class="dropbtn">changes
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Snow -->
     <div class="container">
         <div>
@@ -230,6 +279,24 @@
 
             <div class="snowflakes" aria-hidden="true">
             </div>
+            <div class="sidebar">
+                <div class = "info">
+                  <h1>Content</h1>
+                  <div class="redirects">
+                    <ul>
+                      <li><a href="#">Back to top.</a></li>
+                      <li><a href="#what-is-climate">What is Climate?</a></li>
+                      <li><a href="#factors-affecting-climate">Factors affecting Climate.</a></li>
+                      <li><a href="#types-of-climate">Types of Climate.</a></li>
+                      <li><a href="#weather-vs-climate">Weather vs Climate.</a></li>
+                      <li><a href="#affect-of-easterly-winds">Affect of easterly winds.</a></li>
+                      <li><a href="#what-is-coriolis-force">What is Coriolis Force?</a></li>
+                      <li><a href="#the-indian-monsoon">The Indian Monsoon.</a></li>
+                      <li><a href="#distribution-of-rainfall">Distribution of Rainfall.</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
             <!-- Headlines -->
             <div class="stage">
                 <div class="layer"></div>
@@ -254,6 +321,66 @@
                 <div class="layer"></div>
               </div>
         </div>
+    </div>
+    <hr>
+    <div class="data">
+      <div class="intro">
+        Climate is the long-term average of weather, typically averaged over a period of 30 years. More rigorously, it is the mean and variability of meteorological variables over a time spanning from months to millions of years. Some of the meteorological variables that are commonly measured are temperature, humidity, atmospheric pressure, wind, and precipitation. In a broader sense, climate is the state of the components of the climate system, which includes the ocean, land, and ice on Earth. The climate of a location is affected by its latitude/longitude, terrain, and altitude, as well as nearby water bodies and their currents.
+      </div>
+      <a href="#scroll"><img src="static/images/scroll.png" id="scroller"></a>
+      <a id="scroll"></a>
+      <a id="what-is-climate"></a>
+      <div class="det">
+        <dl>
+          <dt>What is Climate?</dt>
+          <dd>the composite or generally prevailing weather conditions of a region, as temperature, air pressure, humidity, precipitation, sunshine, cloudiness, and winds, throughout the year, averaged over a series of years</dd>
+          
+          <a id="factors-affecting-climate"></a>
+          <dt>Factors affecting Climate.</dt>
+          <dd>Latitude, Altitude, pressure, Wind, distance from sea, ocean currents and relief feature are few major factors which affect the climate of the</dd>
+        
+          <a id="types-of-climate"></a>
+          <dt>Types of Climate.</dt>
+          <dd>There are approximately five main climate types on Earth:
+            <ul>
+            <li>Tropical</li>
+            <li>Dry</li>
+            <li>Temperate</li>
+            <li>Continental</li>
+            <li>Polar</li>
+            </ul>
+          </dd>
+
+          <a id="weather-vs-climate"></a>
+          <dt>Weather vs Climate.</dt>
+          <dd><b>WEATHER</b> - <div class="tabber">basically the way the atmosphere is behaving, mainly with respect to its effects upon life and human activities.</div></dd>
+          <dd><b>CLIMATE</b> - <div class="tabber">averages of precipitation, temperature, humidity, sunshine, wind velocity, phenomena such as fog, frost, and hail storms, and other measures of the weather that occur over a long period in a particular place.</div></dd>
+          
+          <a id="affect-of-easterly-winds"></a>
+          <dt>Affect of easterly winds.</dt>
+          <dd>We observe that most of the deserts are on the western sides of the continents in the subtropics. These are the results of the prevailing easterly winds of the tropics, which are the trade winds. The trade winds prevail in the lower portion of the earth’s atmosphere, in the lower section of the troposphere.These winds become dry when they reach the western sides of the continents, and hence don’t bring any rain with them. As these regions become devoid of moisture, deserts are formed.</dd>
+        
+          <a id="what-is-coriolis-force"></a>
+          <dt>What is Coriolis Force?</dt>
+          <dd>Coriolis force refers to the tendency of the objects to maintain their motion when they move from one place to another. Let us see how it works in the case of Earth! The Earth rotates faster at the equator than it does at the poles. This is because the Earth is wider at the equator in comparison to the poles.</dd>
+          
+          <a id="the-indian-monsoon"></a>
+          <dt>The Indian Monsoon.</dt>
+          <dd>The Indian Monsoon Current refers to the seasonally varying ocean current regime found in the tropical regions of the northern Indian Ocean. During winter, the flow of the upper ocean is directed westward from near the Indonesian Archipelago to the Arabian Sea</dd>
+          
+          <a id="distribution-of-rainfall"></a>
+          <dt>Distribution of Rainfall.</dt>
+          <dd>Distribution of Rainfall in India looks like - 
+            <ul>
+              <li>Parts of the western coast and northeastern India receive over about 400 cm of rainfall annually.</li>
+              <li>Rainfall is less than 60 cm in western Rajasthan and adjoining parts of Gujarat, Haryana and Punjab.</li>
+              <li>Rainfall is low in the interior of the Deccan plateau, and east of the Sahyadris.</li>
+              <li>Snowfall is restricted to the Himalayan region.</li>
+              <li>The annual rainfall is highly variable from year to year.</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
     </div>
 </body>
 </html>

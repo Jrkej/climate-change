@@ -1,30 +1,110 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @font-face {
-    font-family: SnowSeason;
-    src: url(../fonts/SnowySeason.ttf);
-}
-@font-face {
-    font-family: tech;
-    src: url(../fonts/OriginTech.ttf);
-}
-@font-face {
-    font-family: Summer;
-    src: url(../fonts/Blazed.ttf);
+  font-family: sketch;
+  src: url(../fonts/Sketchzone.otf);
 }
 @font-face {
   font-family: louis;
   src: url(../fonts/louis.ttf);
 }
+@font-face {
+  font-family: blurred;
+  src: url(../fonts/KGMidnightMemories.ttf);
+}
 html {
-    overflow:hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     height: 100%;
     min-height: 100%;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);  
+    background-color: black;
+    background-image: linear-gradient(blue 0%, black 95%);  
     text-align: center;
     float: None;
+}
+.data {
+  margin-left: 35vw;
+  margin-top: 5vh;
+  margin-right: 5vh;
+  text-align: left;
+}
+hr {
+  size: 10vh;
+  margin-left: 30vw;
+  margin-top: 45vh;
+}
+.intro {
+  font-size: 3.1vh;
+  color: darksalmon;
+  font-weight: 900;
+  font-family: blurred;
+}
+.data img {
+  position: fixed;
+  padding: 0,0,0,0;
+  width: 5vw;
+  margin-left: 25vw;
+  margin-top: 20vh;
+}
+p {
+  font-size: 3vh;
+}
+.sidebar {
+  margin-top: 10vh;
+  position: fixed;
+  background-color: honeydew;
+  width: 30vw;
+  height: 90vh;
+}
+.det {
+  z-index: 2;
+  color: brown;
+  font-family: sketch;
+  text-align: left;
+  margin-top: 40vh;
+  margin-left: 2vw;
+  font-size: 3vw;
+}
+.info {
+  color: brown;
+  font-family: sketch;
+  text-align: left;
+  margin-top: 14vh;
+  margin-left: 2vw;
+  font-size: 3vw;
+}
+dl {
+  display: block;
+}
+dd {
+  margin-left: 4vw;
+  margin-top: 2vh;
+  font-family: cursive;
+  color: aqua;
+  font-size: 3vh;
+}
+dt {
+  margin-top: 10vh;
+}
+.tabber {
+  color: coral;
+  margin-left: 4vw;
+}
+dl dd ul {
+  margin-left: 6vw;
+  color: coral;
+}
+.redirects {
+  margin-top: 5vh;
+  margin-left: 4vw;
+  font-family:cursive;
+  font-size: 1.7vw;
+  font-style: normal;
+}
+a {
+  color: black;
+  text-decoration: none;
 }
 .header {
     font-family: "Montserrat";
@@ -51,7 +131,38 @@ html {
 /* Responsive UI */
 
 @media screen and (max-width: 1200px) {
+  .data a{
+    display: none;
+  }
+  .sidebar ul li {
+    font-size: 3vh;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+  hr {
+    margin-left: 0vw;
+    margin-top: 35vh;
+  }
+  .data {
+    margin-left: 5vw;
+  }
+  .data img {
+    display: none;
+  }
+  .det {
+    margin-top: 10vh;
+  }
+  dt {
+    font-size: 7vw;
+  }
+  dd {
+    font-size: 4vw;
+  }
+  .intro {
+    margin-left: 7vw;
+  }
 }

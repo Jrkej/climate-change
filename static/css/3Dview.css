@@ -8,7 +8,8 @@ body {
 }
 
 .stage {
-  margin-top: 2vw;
+  margin-top: 10vh;
+  margin-left: 10vw;
   height: 30vh;
   width: 50vw;
   position: absolute;
@@ -157,7 +158,11 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  .stage {
+    margin-top: 13vh;
+    margin-left: -19vw;
+  }
   .layer:after {
-      font: 11vw/0.65 "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS", Helvetica, sans-serif;
+      font: 11vh/0.65 "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS", Helvetica, sans-serif;
   }  
 }

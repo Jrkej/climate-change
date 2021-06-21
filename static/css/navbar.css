@@ -7,16 +7,16 @@
     padding: 0;
     margin: 0;
 }
+.pin {
+  position: fixed;
+  z-index: 5;
+}
 .navbar {
-    padding: 0;
-    margin: 0;
+    width: 100vw;
     overflow: hidden;
     background-color: #333;
     font-family: noodle;
-    align-items: center;
-    text-align: center;
     height: 10vh;
-
   }
 img {
     padding: 7px 16px;
@@ -41,9 +41,15 @@ img {
     overflow: hidden;
     float: left;
   }
+  .dropdown-right {
+    padding-right: 10px;
+    margin-top: .8vh;
+    overflow: hidden;
+    float: right;
+  }
   
   /* Dropdown button */
-  .dropdown .dropbtn {
+  .dropdown .dropbtn, .dropdown-right .dropbtn{
     font-size: 25px;
     border: none;
     outline: none;
@@ -53,13 +59,13 @@ img {
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
-  .dropdown .dropbtn:hover {
+  .dropdown .dropbtn:hover, .dropdown-right .dropbtn:hover {
     font-size: 27px;
     color: violet;
   }
   
   /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropdown-right:hover .dropbtn {
     background-color: red;
   }
   
@@ -89,7 +95,7 @@ img {
   }
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content, .dropdown-right:hover .dropdown-content {
     display: block;
   }
 
@@ -97,15 +103,18 @@ img {
     .navbar {
         height: 8vh;
     }
-    .dropdown .dropbtn {
+    .dropdown-right {
+      margin-top: 0vh;
+    }
+    .dropdown .dropbtn, .dropdown-right .dropbtn {
         font-size: 20px;
         padding: 12px 16px; 
     }
     img {
       padding: 3px 16px;
     }
-    .dropdown .dropbtn:hover {
+    .dropdown .dropbtn:hover, .dropdown-right .dropbtn:hover {
         font-size: 23px;
-      }
+    }
 
 }

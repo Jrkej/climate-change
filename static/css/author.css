@@ -7,6 +7,7 @@
     src: url(../fonts/cocogoose.ttf);
 }
 body {
+    top: 0;
     overflow: hidden;
     background-color: rgb(190, 188, 188);
     text-align: center;
@@ -32,10 +33,10 @@ h2 {
     height: 50vh;
 }
 .sidebar {
-    padding-top: 10vh;
+    padding-top: 20vh;
     background-color: honeydew;
     width: 30vw;
-    height: 90vh;
+    height: 80vh;
 }
 .content {
     width: 70vw;
@@ -46,26 +47,42 @@ h2 {
     text-align: left;
 }
 .aboutme {
-    padding-top: 5vh;
-    padding-left: 3vw;
+    margin-top: 5vh;
+    margin-left: 3vw;
     font-family: coco;
+    font-size: 3.2vh;
+    color: black;
 }
 @media screen and (max-width: 1200px) {
     .sidebar {
-        width:45%;
+        width:45vw;
     }
     .sidebar img {
         padding-top: 4vh;
         width: 30vw;
         height: 55vh;
     }
+    .content {
+        margin-top: 10vh;
+        margin-left: 45vw;
+        width: 55vw;
+    }
     .info {
         padding-top: 2vh;
         padding-left: 12vw;
     }
 }
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 @media screen and (max-width: 700px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
     .sidebar {
+        height: 100vh;
         width:100%;
     }
     .sidebar img {
@@ -79,7 +96,11 @@ h2 {
         font-size: 1.6vh;
     }
     .content {
-        margin-top: 10vh;
-        margin-left: 30vw;
+        width: 100vw;
+        margin-top: 120vh;
+        margin-left: 0;
+    }
+    .aboutme {
+        margin-left: 10vw;
     }
 }
