@@ -14,9 +14,7 @@ function resizeCanvas() {
 
 }
 function copy() {
-    var copyText = document.getElementById("fixed");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999)
+    document.getElementById("fixed").select();
     document.execCommand("copy");
-    alert("Copied the link: " + copyText.value);
+    alert("Copied the link: " + document.getElementById("fixed").value);
 }

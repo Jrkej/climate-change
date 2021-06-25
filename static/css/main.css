@@ -12,10 +12,10 @@ body {
   overflow: hidden;
   width: 100vw;
 }
-input {
-    display: none;
+textarea {
+  width: 0px;
+  height: 0px;
 }
-
 #ui {
     transform-style: preserve-3d;
     margin-top: 20vh;
