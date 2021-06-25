@@ -76,6 +76,7 @@ p {
 }
 dl {
   display: block;
+  padding-bottom: 5vh;
 }
 dd {
   margin-left: 4vw;
@@ -136,6 +137,9 @@ a {
   }
   .sidebar ul li {
     font-size: 3vh;
+  }
+  .det {
+    margin-top: 20vh;
   }
 }
 
